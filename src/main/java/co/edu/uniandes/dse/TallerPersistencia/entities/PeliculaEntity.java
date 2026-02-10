@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class PelículaEntity extends BaseEntity {
+public class PeliculaEntity extends BaseEntity {
     // Atributos
 
     // Asociaciones
