@@ -7,6 +7,9 @@ import lombok.Data;
 @Entity
 public class PeliculaEntity extends BaseEntity {
     // Atributos
+    private Long id;
+    private String titulo;
+    private int anioLanzamiento;
 
     // Asociaciones
 }

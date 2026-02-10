@@ -7,6 +7,8 @@ import lombok.Data;
 @Entity
 public class DirectorEntity extends BaseEntity {
     // Atributos
-
+    private Long id;
+    private String nombre, biografia;
+    
     // Asociaciones
 }
