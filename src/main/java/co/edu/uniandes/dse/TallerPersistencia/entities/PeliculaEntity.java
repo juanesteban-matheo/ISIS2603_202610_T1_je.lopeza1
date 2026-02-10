@@ -1,6 +1,9 @@
 package co.edu.uniandes.dse.TallerPersistencia.entities;
 
+import java.util.ArrayList;
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import lombok.Data;
 import uk.co.jemos.podam.common.PodamExclude;
@@ -17,4 +20,7 @@ public class PeliculaEntity extends BaseEntity {
     @PodamExclude
     @ManyToOne
     private DirectorEntity director;
+
+    @ManyToMany(mappedBy = "actores")
+    private ArrayList<ActorEntity> actores = new ArrayList<ActorEntity>();
 }
